@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>45623655157-gj0aku3v7rsds4s8hjb7svck2l3qapu0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.45623655157-gj0aku3v7rsds4s8hjb7svck2l3qapu0</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD9azIkHM4zN-zrSqFhBiyzPgVAqZAROa8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>45623655157</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.quotezilla.magnitude</string>
+	<key>PROJECT_ID</key>
+	<string>magnitude-develop</string>
+	<key>STORAGE_BUCKET</key>
+	<string>magnitude-develop.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:45623655157:ios:a12845b9f29d835af3e3bc</string>
+	<key>DATABASE_URL</key>
+	<string>https://magnitude-develop-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

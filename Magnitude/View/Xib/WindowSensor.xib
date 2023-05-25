@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WindowSensor" customModule="Magnitude" customModuleProvider="target">
+            <connections>
+                <outlet property="firstOptionDescription" destination="rZa-lz-7Qc" id="8Pk-i9-cWI"/>
+                <outlet property="firstOptionTitle" destination="xzx-bJ-5wW" id="OzO-Sc-KBM"/>
+                <outlet property="productImage" destination="aHY-g0-gvs" id="pwg-Eg-s4f"/>
+                <outlet property="productSecondTitle" destination="ZB4-eH-1wu" id="f9V-dH-fgB"/>
+                <outlet property="productTitle" destination="lkJ-2R-vuJ" id="P1f-8d-J8p"/>
+                <outlet property="quoteBtn" destination="cKg-TW-8ag" id="4bX-QE-Tdr"/>
+                <outlet property="secondOptionDescription" destination="Eso-Le-pFI" id="Xx3-nf-Vrt"/>
+                <outlet property="secondOptionTitle" destination="bl1-Be-llp" id="yVi-bA-Th7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product1" translatesAutoresizingMaskIntoConstraints="NO" id="aHY-g0-gvs">
+                    <rect key="frame" x="107" y="84" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="ZRa-5E-oRc"/>
+                        <constraint firstAttribute="height" constant="200" id="Zg7-q4-Wal"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKg-TW-8ag">
+                    <rect key="frame" x="20" y="324" width="160" height="35"/>
+                    <color key="backgroundColor" red="0.0" green="0.3803921569" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="X0f-Jc-LtQ"/>
+                        <constraint firstAttribute="width" constant="160" id="pRP-gP-4ei"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <state key="normal" title="ADD TO QUOTE">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" title="REMOVE FROM QUOTE"/>
+                    <connections>
+                        <action selector="quoteBtnTapped:" destination="-1" eventType="touchUpInside" id="7LF-FE-GMD"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Security ADT Window Sensor" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkJ-2R-vuJ">
+                    <rect key="frame" x="20" y="389" width="374" height="72"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Sensor for your ADT smart home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZB4-eH-1wu">
+                    <rect key="frame" x="20" y="471" width="374" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intuitive controls" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzx-bJ-5wW">
+                    <rect key="frame" x="20" y="519" width="148" height="23"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simple smart-home setup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bl1-Be-llp">
+                    <rect key="frame" x="20" y="636" width="374" height="23"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZa-lz-7Qc">
+                    <rect key="frame" x="20" y="552" width="374" height="54"/>
+                    <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing 
+elit, sed do eiusmod tempor incididunt ut labore et 
+dolore magna aliqua. Ut enim ad minim veniam, quis.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eso-Le-pFI">
+                    <rect key="frame" x="20" y="669" width="374" height="54"/>
+                    <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing 
+elit, sed do eiusmod tempor incididunt ut labore et 
+dolore magna aliqua. Ut enim ad minim veniam, quis.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lkJ-2R-vuJ" secondAttribute="trailing" constant="20" id="02F-jS-rBh"/>
+                <constraint firstItem="cKg-TW-8ag" firstAttribute="top" secondItem="aHY-g0-gvs" secondAttribute="bottom" constant="40" id="31M-o7-dck"/>
+                <constraint firstItem="xzx-bJ-5wW" firstAttribute="top" secondItem="ZB4-eH-1wu" secondAttribute="bottom" constant="30" id="4uG-hR-G8b"/>
+                <constraint firstItem="aHY-g0-gvs" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="40" id="4xc-Ox-HJ4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZB4-eH-1wu" secondAttribute="trailing" constant="20" id="9Km-Ye-oRq"/>
+                <constraint firstItem="rZa-lz-7Qc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="CL8-sR-H2Z"/>
+                <constraint firstItem="Eso-Le-pFI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="D2w-jV-F0l"/>
+                <constraint firstItem="aHY-g0-gvs" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="I2s-zo-Udq"/>
+                <constraint firstItem="ZB4-eH-1wu" firstAttribute="top" secondItem="lkJ-2R-vuJ" secondAttribute="bottom" constant="10" id="Jyg-h0-3mZ"/>
+                <constraint firstItem="bl1-Be-llp" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="KVQ-kT-eu6"/>
+                <constraint firstItem="cKg-TW-8ag" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="LX0-Mp-CPV"/>
+                <constraint firstItem="Eso-Le-pFI" firstAttribute="top" secondItem="bl1-Be-llp" secondAttribute="bottom" constant="10" id="PQH-JL-dOM"/>
+                <constraint firstItem="lkJ-2R-vuJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Tfr-zg-zMh"/>
+                <constraint firstItem="rZa-lz-7Qc" firstAttribute="top" secondItem="xzx-bJ-5wW" secondAttribute="bottom" constant="10" id="UGh-eT-QvY"/>
+                <constraint firstItem="bl1-Be-llp" firstAttribute="top" secondItem="rZa-lz-7Qc" secondAttribute="bottom" constant="30" id="cnf-it-tLb"/>
+                <constraint firstItem="lkJ-2R-vuJ" firstAttribute="top" secondItem="cKg-TW-8ag" secondAttribute="bottom" constant="30" id="gwm-Ah-a5N"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bl1-Be-llp" secondAttribute="trailing" constant="20" id="h5w-pB-TL7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rZa-lz-7Qc" secondAttribute="trailing" constant="20" id="o6b-f4-z4U"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Eso-Le-pFI" secondAttribute="trailing" constant="20" id="pmp-yD-4qS"/>
+                <constraint firstItem="ZB4-eH-1wu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="vK5-ao-wb1"/>
+                <constraint firstItem="xzx-bJ-5wW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="wme-Hi-KPm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-201.44927536231884" y="168.75"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="product1" width="200" height="200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

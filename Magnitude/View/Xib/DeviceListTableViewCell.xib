@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="DeviceListTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="DeviceListTableViewCell" rowHeight="82" id="KGk-i7-Jjw" customClass="DeviceListTableViewCell" customModule="Magnitude" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="362" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="3Tb-T5-5Qd">
+                        <rect key="frame" x="12" y="25.5" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="ukX-2e-TqY"/>
+                            <constraint firstAttribute="width" constant="24" id="vUw-e8-Ql1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Security ADT Door Sensor" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PQ3-Aa-egw">
+                        <rect key="frame" x="48" y="5" width="306" height="65"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PQ3-Aa-egw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Yvf-n5-OZN"/>
+                    <constraint firstItem="PQ3-Aa-egw" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="eqN-YQ-Hpf"/>
+                    <constraint firstAttribute="bottom" secondItem="PQ3-Aa-egw" secondAttribute="bottom" constant="5" id="fJ4-Yr-NvV"/>
+                    <constraint firstItem="PQ3-Aa-egw" firstAttribute="leading" secondItem="3Tb-T5-5Qd" secondAttribute="trailing" constant="12" id="lrJ-Yv-5du"/>
+                    <constraint firstAttribute="trailing" secondItem="PQ3-Aa-egw" secondAttribute="trailing" constant="8" id="mW8-Uq-28e"/>
+                    <constraint firstItem="3Tb-T5-5Qd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="qBD-g0-F7V"/>
+                    <constraint firstItem="3Tb-T5-5Qd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="vcJ-RH-B4s"/>
+                    <constraint firstItem="3Tb-T5-5Qd" firstAttribute="centerY" secondItem="PQ3-Aa-egw" secondAttribute="centerY" id="zqa-2V-mMv"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="qBD-g0-F7V"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkImage" destination="3Tb-T5-5Qd" id="CaS-7x-LyJ"/>
+                <outlet property="deviceName" destination="PQ3-Aa-egw" id="pOJ-t2-xp3"/>
+            </connections>
+            <point key="canvasLocation" x="171.01449275362319" y="110.15625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="check" width="24" height="24"/>
+    </resources>
+</document>
